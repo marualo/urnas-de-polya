@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urnas de Pólya | El azar con memoria</title>
+
+    <!-- ARCHIVO DE ESTILOS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+
+        <nav>
+
+            <a class="navbar-brand" href="#inicio">
+                ⚫ URNAS DE PÓLYA ⚪
+            </a>
+
+            <div>
+                <a href="#juego">El desafío</a>
+                <a href="#laboratorio">Laboratorio</a>
+                <a href="#estadisticas">Estadísticas</a>
+                <a href="#reflexiones">Reflexiones</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section id="inicio">
+
+            <h1>¿Puede el azar recordar?</h1>
+
+            <p>
+                Cómo los resultados del pasado
+                pueden influir en las probabilidades futuras.
+            </p>
+
+        </section>
+
+
+        <!-- DESCRIPCIÓN DEL EXPERIMENTO -->
+        <section id="consgina">
+
+            <h2>Idea principal</h2>
+
+            <p>
+                En muchos modelos de azar, como tirar una moneda
+                o un dado, cada resultado es independiente de los
+                anteriores. Pero ¿qué pasa cuando el pasado influye
+                en las probabilidades del futuro?
+            </p>
+
+            <p>
+                La urna de Pólya es un modelo matemático que permite
+                estudiar esta idea: un azar que tiene memoria.
+            </p>
+
+            <p>
+                El experimento comienza con una urna que contiene
+                dos bolas: una negra y una blanca.
+            </p>
+
+            <h3>¿Cómo funciona el experimento?</h3>
+
+            <p>
+                1. Se extrae una bola al azar.<br>
+                2. Se observa su color.<br>
+                3. Se devuelve la bola a la urna y se agrega otra del mismo color.
+            </p>
+
+            <p>
+                De esta manera, la cantidad de bolas de cada color
+                cambia con el tiempo. Cada extracción modifica la
+                composición de la urna y, por lo tanto, las
+                probabilidades de las extracciones siguientes.
+            </p>
+
+            <!-- IMAGEN DE LA URNA DE PÓLYA -->
+
+            <figure class="imagen-consigna">
+
+                <img
+                    src="img/urna1.png"
+                    alt="Representación de una urna de Pólya con bolas negras y blancas"
+                >
+
+                <figcaption>
+                    Representación del experimento de la urna de Pólya.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- 01. JUEGO PRINCIPAL -->
+        <section id="juego">
+
+            <h2>01. El desafío</h2>
+
+            <p>
+                Observá los primeros 10 resultados y elegí
+                qué color tendrá más bolas al llegar a las
+                500 extracciones.
+            </p>
+
+            <div id="juego-contenido">
+                <!-- Aquí se genera el juego con JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- 02. LABORATORIO -->
+        <section id="laboratorio">
+
+            <h2>02. Laboratorio de experimentos</h2>
+
+            <p>
+                Ahora que conocés el funcionamiento de la urna
+                original, modificá algunas de sus condiciones
+                y observá cómo cambian los resultados.
+            </p>
+
+            <div id="variantes-contenido">
+                <!-- Aquí se generan las variantes -->
+            </div>
+
+        </section>
+
+
+        <!-- 03. ESTADÍSTICAS -->
+        <section id="estadisticas">
+
+            <h2>03. Estadísticas e historial</h2>
+
+            <p>
+                Analizá los resultados de las partidas y compará
+                cómo evoluciona la proporción de bolas de cada color
+                durante las 500 extracciones.
+            </p>
+
+            <div id="estadisticas-contenido">
+                <!-- Aquí se muestran los resultados -->
+            </div>
+
+            <h3>Evolución de los porcentajes</h3>
+
+            <p>
+                Cada línea representa la evolución de un intento.
+                Podés pasar el cursor sobre la gráfica para destacar
+                uno de ellos.
+            </p>
+
+            <canvas id="grafico-evolucion"></canvas>
+
+        </section>
+
+
+        <!-- 04. REFLEXIONES -->
+        <section id="reflexiones">
+
+            <h2>04. Reflexiones</h2>
+
+            <div id="reflexiones-contenido">
+                <!-- Aquí se muestran las reflexiones -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>Proyecto académico · Urnas de Pólya</p>
+
+    </footer>
+
+
+    <!-- ARCHIVOS JAVASCRIPT -->
+    <script src="js/urna.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="js/estadisticas.js"></script>
+    <script src="js/variantes.js"></script>
+    <script src="js/reflexiones.js"></script>
+
+</body>
+
+</html>
