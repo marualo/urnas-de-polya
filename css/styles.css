@@ -995,6 +995,14 @@ footer p {
     font-weight: bold;
 }
 
+/* INTEGRANTES DEL PROYECTO */
+
+.footer-equipo {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    text-align: center;
+}
 
 /* =========================================
    10. ANIMACIONES
